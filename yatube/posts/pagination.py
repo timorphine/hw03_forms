@@ -6,7 +6,5 @@ def paginator_context(queryset, request):
     paginator = Paginator(queryset, 10)
     page_obj = paginator.get_page(page_number)
     return {
-        'page_nubmer': page_number,
-        'paginator': paginator,
         'page_obj': page_obj
     }
